@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Distraction Reroute Settings</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Distraction Reroute Settings</h2>
+    
+    <div class="tabs">
+      <button class="tab active" data-tab="presets">Presets</button>
+      <button class="tab" data-tab="custom">Custom Rules</button>
+      <button class="tab" data-tab="about">About</button>
+    </div>
+    
+    <div id="presets-content" class="tab-content active">
+      <div class="category">
+        <h3>🎯 Productivity</h3>
+        <div id="productivity-rules" class="preset-rules"></div>
+      </div>
+      
+      <div class="category">
+        <h3>🔒 Privacy</h3>
+        <div id="privacy-rules" class="preset-rules"></div>
+      </div>
+      
+      <div class="category">
+        <h3>👨‍💻 Development</h3>
+        <div id="development-rules" class="preset-rules"></div>
+      </div>
+      
+      <div class="category">
+        <h3>📰 News</h3>
+        <div id="news-rules" class="preset-rules"></div>
+      </div>
+    </div>
+    
+    <div id="custom-content" class="tab-content">
+      <div id="rules-container"></div>
+      <button id="add-rule" class="btn btn-primary">Add Rule</button>
+    </div>
+    
+    <div id="about-content" class="tab-content">
+      <p style="font-size:13px;line-height:1.4;margin:0">
+        Distraction Reroute instantly redirects distracting domains—or wildcard/path matches—to more productive alternatives. Toggle preset categories or add custom rules; every change auto-saves and syncs via Chrome Sync.
+      </p>
+      <ul style="font-size:13px;margin-top:8px;padding-left:18px;line-height:1.4">
+        <li>Uses Chrome Declarative Net Request for private, fast redirects</li>
+        <li>Wildcard &amp; path support (e.g. <code>*://*.site.com/path/*</code>)</li>
+        <li>All settings stored locally &amp; synced across devices</li>
+      </ul>
+    </div>
+    
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

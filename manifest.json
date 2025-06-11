@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "Distraction Reroute",
+  "version": "1.0",
+  "description": "Redirect websites to your preferred alternatives",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.reddit.com/*",
+    "https://*.twitter.com/*",
+    "https://*.x.com/*",
+    "https://*.facebook.com/*",
+    "https://*.instagram.com/*",
+    "https://*.tiktok.com/*",
+    "https://*.youtube.com/*",
+    "https://*.google.com/*",
+    "https://*.bing.com/*",
+    "https://*.amazon.com/*",
+    "https://*.stackoverflow.com/*",
+    "https://*.w3schools.com/*",
+    "https://*.cnn.com/*",
+    "https://*.foxnews.com/*",
+    "https://*.buzzfeed.com/*",
+    "https://*.linkedin.com/*",
+    "https://*.notion.so/*",
+    "https://*.github.com/*",
+    "https://*.leetcode.com/*",
+    "https://*.coursera.org/*",
+    "https://*.duckduckgo.com/*",
+    "https://*.smile.amazon.com/*",
+    "https://*.devdocs.io/*",
+    "https://*.mdn.io/*",
+    "https://*.reuters.com/*",
+    "https://*.apnews.com/*",
+    "https://*.arstechnica.com/*",
+    "https://*.claude.ai/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Distraction Reroute Settings",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
